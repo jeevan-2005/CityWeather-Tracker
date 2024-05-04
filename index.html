@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+    <nav id="navbar">
+        <form class="search">
+            <input type="search" name="" id="searchBar">
+            <input type="submit" value="search" id="searchBtn">
+        </form> 
+        <div class="sideBar">
+            <a href="https://www.google.com/maps/@24.7681955,75.5491941,5.17z?entry=ttu" target="_blank">
+                <i class="fa-solid fa-location-arrow" style="font-size: 25px;"></i>
+            </a>
+            <button id="diffWeather">Different Weather?</button>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="leftClick()">Metric: ℃, m/s</button>
+                    <button type="button" class="toggle-btn" onclick="rightClick()">Imperial: ℉, mph</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="container">
+        <div class="data">
+            <div id="loading"> 
+                <h2>Loading...</h2>
+            </div>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=kota&t=k&z=19&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://embedgooglemap.net/124/"></a><br>
+                <a href="https://www.embedgooglemap.net"></a>
+            </div>
+        </div>
+    </section>
+
+    <hr style="width: 95%;border: 2px solid rgb(235,110,76);margin: auto;">
+   
+    <section id="forecastContainer">
+        <div class="loading">
+            <h2>Loading...</h2>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
+<!-- 
+{
+    "coord": {
+        "lon": 75.8167,
+        "lat": 26.9167
+    },
+    "weather": [
+        {
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 294.77,
+        "feels_like": 294.27,
+        "temp_min": 294.77,
+        "temp_max": 294.77,
+        "pressure": 1020,
+        "humidity": 49
+    },
+    "visibility": 3000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 240
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1708145297,
+    "sys": {
+        "type": 1,
+        "id": 9170,
+        "country": "IN",
+        "sunrise": 1708133545,
+        "sunset": 1708174167
+    },
+    "timezone": 19800,
+    "id": 1269515,
+    "name": "Jaipur",
+    "cod": 200
+} -->
