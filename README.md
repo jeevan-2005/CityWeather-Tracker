@@ -1,4 +1,4 @@
-# Weather App
+# CityWeather-Tracker
 
 Welcome to the Weather App! This application provides real-time weather information for any city you search for. It also displays a 5-day weather forecast and includes an integrated map for enhanced visual appeal.
 
