@@ -10,11 +10,8 @@ Welcome to the Weather App! This application provides real-time weather informat
 
 ## Screenshots
 
-![Home Page](path/to/your/image1.png)
+![weather-tracker](https://github.com/user-attachments/assets/3ff7039d-08ee-4769-a59a-4996c740180e)
 *Home Page displaying the current weather and integrated map.*
-
-![5-Day Forecast](path/to/your/image2.png)
-*5-Day Weather Forecast view.*
 
 ## Installation
 
